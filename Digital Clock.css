@@ -1,0 +1,30 @@
+body{
+    background-color: skyblue;
+}
+h1{
+    color: darkblue;
+    text-align: center;
+    margin-top: 40px;
+}
+#clock{
+    display: relative;
+    text-align: center;
+    color: aliceblue;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    position: absolute;
+}
+#clock{
+    animation-name: change;
+    animation-duration: 12s;
+    animation-timing-function: cubic-bezier(0.3, 0.4, 0.5, 2);
+    animation-iteration-count: infinite;
+
+}
+@keyframes change{
+    
+    0% { color: white; right: 10%}
+    50% {color: cyan; left: 50%}
+    75% { color: crimson; top: 70%;}
+    100% { color: crimson; top: 40%;}
+}
